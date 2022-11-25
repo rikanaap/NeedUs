@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF6F6"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="101px"
+        android:layout_height="104px"
+        android:src="@drawable/back"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:src="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="700px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="510px"
+        android:fontFamily="@font/pbold"
+        android:text="Akbar Fadhl"
+        android:textColor="@color/black"
+        android:textSize="48px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="475px"
+        android:fontFamily="@font/pbold"
+        android:text="akbarfadhl@gmail.com"
+        android:textSize="24px" />
+
+    <EditText
+        android:layout_width="880px"
+        android:layout_height="146px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="200px"
+        android:background="@color/white"
+        android:fontFamily="@font/pbold"
+        android:hint="What's your first name?"
+        android:paddingLeft="70px"
+        android:textColorHint="@color/black"
+        android:textSize="32px" />
+
+    <EditText
+        android:layout_width="880px"
+        android:layout_height="146px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5px"
+        android:background="@color/white"
+        android:fontFamily="@font/pbold"
+        android:hint="And your last name?"
+        android:paddingLeft="70px"
+        android:textColorHint="@color/black"
+        android:textSize="32px" />
+
+    <ImageView
+        android:layout_width="146px"
+        android:layout_height="146px"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="190px"
+        android:layout_marginRight="365px"
+        />
+
+    <ImageView
+        android:layout_width="61px"
+        android:layout_height="65px"
+        android:src="@drawable/profile_phone"
+        android:layout_gravity="center"
+        android:layout_marginTop="190px"
+        android:layout_marginRight="365px"/>
+
+    <EditText
+        android:layout_width="730px"
+        android:layout_height="146px"
+        android:layout_gravity="center"
+        android:layout_marginTop="190px"
+        android:layout_marginLeft="75px"
+        android:background="@color/white"
+        android:fontFamily="@font/pbold"
+        android:hint="Phone number"
+        android:paddingLeft="70px"
+        android:textColorHint="@color/black"
+        android:textSize="32px" />
+
+    <EditText
+        android:layout_width="880px"
+        android:layout_height="146px"
+        android:layout_gravity="center"
+        android:layout_marginTop="385px"
+        android:background="@color/white"
+        android:fontFamily="@font/pbold"
+        android:hint="Select your gender"
+        android:paddingLeft="70px"
+        android:textColorHint="@color/black"
+        android:textSize="32px" />
+
+    <ImageView
+        android:layout_width="22px"
+        android:layout_height="14px"
+        android:layout_gravity="center"
+        android:layout_marginLeft="370px"
+        android:layout_marginTop="385px"
+        android:src="@drawable/profile_dropdown" />
+
+    <EditText
+        android:layout_width="880px"
+        android:layout_height="146px"
+        android:layout_gravity="center"
+        android:layout_marginTop="585px"
+        android:background="@color/white"
+        android:fontFamily="@font/pbold"
+        android:hint="What is your date of birth?"
+        android:paddingLeft="70px"
+        android:textColorHint="@color/black"
+        android:textSize="32px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@drawable/profile_footer"
+        android:layout_marginTop="780px"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="453px"
+        android:layout_height="93px"
+        android:background="@drawable/pesanan_button"
+        android:fontFamily="@font/pbold"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="780px"/>
+
+</FrameLayout>

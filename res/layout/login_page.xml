@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/magenta">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="177px"
+        android:layout_height="177px"
+        android:layout_marginStart="84dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Need Us"
+        android:layout_marginLeft="10px"
+        android:textColor="@color/white"
+        android:textSize="96px"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kami ada untuk kalian"
+        android:textColor="@color/white"
+        android:textSize="40px"
+        android:fontFamily="@font/pbold"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1338px"
+        android:background="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:fontFamily="@font/bold"
+            android:text="Silahkan untuk memasukan data kalian"
+            android:textColor="@color/magenta"
+            app:layout_constraintStart_toStartOf="@id/usernameEdit"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameEdit"
+                android:layout_width="864px"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColor="@color/magenta"
+                android:textColorHint="@color/magenta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/magenta"
+                android:fontFamily="@font/bold"
+                android:textSize="40px" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nisEdit"
+            android:layout_width="864px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/bold"
+            android:hint="Nis"
+            android:textColor="@color/magenta"
+            android:textColorHint="@color/magenta"
+            android:textSize="40px"
+            app:layout_constraintEnd_toEndOf="@id/usernameEdit"
+            app:layout_constraintStart_toStartOf="@id/usernameEdit"
+            app:layout_constraintTop_toBottomOf="@id/usernameEdit" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="653px"
+            android:layout_height="93px"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/login_btn"
+            android:fontFamily="@font/bold"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nisEdit" />
+        <CheckBox
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:button="@null"
+            android:background="?android:attr/listChoiceIndicatorMultiple"
+            android:layout_marginTop="50px"
+            app:layout_constraintStart_toStartOf="@id/nisEdit"
+            app:layout_constraintTop_toBottomOf="@id/loginButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textSize="23px"
+            app:layout_constraintEnd_toEndOf="@id/nisEdit"
+            app:layout_constraintTop_toBottomOf="@id/loginButton"
+            android:layout_marginTop="50px"
+            android:textColor="@color/magenta"
+            android:fontFamily="@font/regular"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:text="Sign Up"
+            android:gravity="center_horizontal"
+            android:paddingTop="35px"
+            android:fontFamily="@font/pbold"
+            android:textColor="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="285px"
+            android:background="@drawable/login_register"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:text="Let's Create Account!"
+            android:textAllCaps="false"
+            android:fontFamily="@font/pbold"
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:background="@drawable/login_register_bottom"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
