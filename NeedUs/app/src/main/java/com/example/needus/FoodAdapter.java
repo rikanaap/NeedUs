@@ -13,16 +13,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
-    private String[] data1;
+    private String[] data1, data2, data3, data4;
     private int[] img, menu1, menu2, menu3;
     private Context context;
-    public FoodAdapter(Context ct, String[] s1, int[] images, int[] m1,int[] m2,int[] m3){
+    public FoodAdapter(Context ct, String[] s1, int[] images, int[] m1,int[] m2,int[] m3, String[] tm1,String[] tm2,String[] tm3){
         context = ct;
         data1 = s1;
         img = images;
         menu1 = m1;
         menu2 = m2;
         menu3 = m3;
+        data2 = tm1;
+        data3 = tm2;
+        data4 = tm3;
     }
     @NonNull
     @Override
@@ -43,6 +46,9 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
                 ifood.putExtra("Menu1",menu1[position]);
                 ifood.putExtra("Menu2",menu2[position]);
                 ifood.putExtra("Menu3",menu3[position]);
+                ifood.putExtra("TextMenu1", data2[position]);
+                ifood.putExtra("TextMenu2", data3[position]);
+                ifood.putExtra("TextMenu3", data4[position]);
                 context.startActivity(ifood);
             }
         });

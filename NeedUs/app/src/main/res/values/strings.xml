@@ -41,21 +41,22 @@
         <item>Siomay Ayam</item>
     </string-array>
     <string-array name="menu2">
-        <item>Donat Coklat</item>
-        <item>Kebab Ayam</item>
-        <item>Burger Cheese</item>
-        <item>Strawberry Hus</item>
-        <item>Ramen Hot</item>
-        <item>Siomay Ayam</item>
+        <item>Donat Strawberry</item>
+        <item>Kebab Sapi</item>
+        <item>Burger Double Beef</item>
+        <item>Jambu Hus</item>
+        <item>Ramen White Curry</item>
+        <item>Siomay Ikan</item>
     </string-array>
     <string-array name="menu3">
-        <item>Donat Coklat</item>
-        <item>Kebab Ayam</item>
-        <item>Burger Cheese</item>
-        <item>Strawberry Hus</item>
-        <item>Ramen Hot</item>
-        <item>Siomay Ayam</item>
+        <item>Donat Tiramisu</item>
+        <item>Kebab Full Daging</item>
+        <item>Burger Ayam</item>
+        <item>Lemon Soda Hus</item>
+        <item>Ramen Sweden</item>
+        <item>Siomay Daging</item>
     </string-array>
+
 
     <string name="title_activity_pembayaran_jasa">PembayaranJasa</string>
     <!-- Strings used for fragments for navigation -->

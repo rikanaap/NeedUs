@@ -18,7 +18,7 @@ import android.widget.LinearLayout;
 public class MainMenu extends AppCompatActivity {
     ImageView btn;
     RecyclerView rv1, rv2;
-    String s1[], s2[], s1a[], s2a[];
+    String s1[], s2[], s1a[], s2a[], s1b[], s2b[], s3b[];
     int ahli[] = {R.drawable.tobey, R.drawable.johhny, R.drawable.tom, R.drawable.rose, R.drawable.jisoo, R.drawable.karina};
     int food[] = {R.drawable.donat, R.drawable.kebab, R.drawable.burger,R.drawable.housin, R.drawable.ramen, R.drawable.dimsum};
 
@@ -50,7 +50,10 @@ public class MainMenu extends AppCompatActivity {
         int[] menu1 = {R.drawable.pembayaran_food_1,R.drawable.menu1a, R.drawable.menu1b, R.drawable.menu1c, R.drawable.menu1d, R.drawable.menu1e};
         int[] menu2 = {R.drawable.pembayaran_food_2,R.drawable.menu2a, R.drawable.menu2b, R.drawable.menu2c, R.drawable.menu2d, R.drawable.menu2e};
         int[] menu3 = {R.drawable.pembayaran_food_3,R.drawable.menu3a, R.drawable.menu3b, R.drawable.menu3c, R.drawable.menu3d, R.drawable.menu3e};
-        FoodAdapter f = new FoodAdapter(this, s2, food, menu1, menu2, menu3);
+        s1b = getResources().getStringArray(R.array.menu1);
+        s2b = getResources().getStringArray(R.array.menu2);
+        s3b = getResources().getStringArray(R.array.menu3);
+        FoodAdapter f = new FoodAdapter(this, s2, food, menu1, menu2, menu3, s1b, s2b, s3b);
         rv2.setAdapter(f);
         rv2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
     }

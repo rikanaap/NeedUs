@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
     android:background="#FAF6F6"
     tools:context=".MainActivity">
+
     <ImageView
-        android:layout_width="101px"
+        android:id="@+id/buttonBacks"
+        android:layout_width="32dp"
         android:layout_height="104px"
-        android:src="@drawable/back"
         android:layout_marginLeft="30px"
-        android:layout_marginTop="30px"/>
+        android:layout_marginTop="30px"
+        android:src="@drawable/back" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="250px"
