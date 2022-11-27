@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/pembayaran_arrow_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="593px"
+                android:layout_height="467px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/pembayaran_donut_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="265px"
+                android:layout_height="270px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="116dp"
+                android:background="@drawable/pembayaran_donut_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.097"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="281px"
+                android:layout_height="220px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/pembayaran_donut_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.882"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="228dp"
+                android:fontFamily="@font/bbold"
+                android:text="Daftar Pembelian"
+                android:textColor="#000000"
+                android:textSize="36px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.098"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="931px"
+                android:layout_height="243px"
+                android:layout_marginTop="260dp"
+                app:cardBackgroundColor="#ffff"
+                android:elevation="5px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/gambarMenu1"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/pembayaran_food_1" />
+
+                <TextView
+                    android:id="@+id/textMenu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bregular"
+                    android:text="Donat Coklat"
+                    android:textColor="#000000"
+                    android:textSize="36px" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/rps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bregular"
+                        android:text="Rp. "
+                        android:textColor="@color/black"
+                        android:textSize="36px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/harga1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bregular"
+                        android:gravity="right"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="36px"
+                        app:layout_constraintStart_toEndOf="@id/rps"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="931px"
+                android:layout_height="243px"
+                android:layout_marginTop="364dp"
+                app:cardBackgroundColor="#ffff"
+                android:elevation="5px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/gambarMenu2"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/pembayaran_food_2" />
+
+                <TextView
+                    android:id="@+id/textMenu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bregular"
+                    android:text="Donat Strawberry"
+                    android:textColor="#000000"
+                    android:textSize="36px" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/rps2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bregular"
+                        android:text="Rp. "
+                        android:textColor="@color/black"
+                        android:textSize="36px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/harga2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bregular"
+                        android:gravity="right"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="36px"
+                        app:layout_constraintStart_toEndOf="@id/rps2"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bawah"
+                android:layout_width="931px"
+                android:layout_height="243px"
+                android:layout_marginTop="468dp"
+                android:elevation="5px"
+                app:cardBackgroundColor="#ffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/gambarMenu3"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/pembayaran_food_3" />
+
+                <TextView
+                    android:id="@+id/textMenu3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bregular"
+                    android:text="Donat Tiramisu"
+                    android:textColor="#000000"
+                    android:textSize="36px" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/rps1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bregular"
+                        android:text="Rp. "
+                        android:textColor="@color/black"
+                        android:textSize="36px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/harga3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bregular"
+                        android:gravity="right"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="36px"
+                        app:layout_constraintStart_toEndOf="@id/rps1"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="391px"
+                android:background="@drawable/pembayaran_food_footer"
+                android:translationZ="6px"
+                android:layout_marginTop="30px"
+                app:layout_constraintTop_toBottomOf="@id/bawah"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/pbold"
+                    android:text="Pembayaran"
+                    android:textColor="#FFFFFF"
+                    android:textSize="60px"
+                    app:layout_constraintBottom_toTopOf="@+id/button"
+                    app:layout_constraintStart_toStartOf="@+id/button" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/button"
+                    android:layout_width="906px"
+                    android:layout_height="113px"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:elevation="10px"
+                    android:background="@drawable/pembayaran_food_footer_button">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pbold"
+                        android:text="Buy Now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="40px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_marginLeft="20px"
+                        android:src="@drawable/pembayaran_arrow_bottom"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                        app:layout_constraintStart_toEndOf="@+id/textView3"
+                        app:layout_constraintTop_toTopOf="@+id/textView3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
