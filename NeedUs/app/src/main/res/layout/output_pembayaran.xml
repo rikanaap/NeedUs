@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="717px"
+        android:layout_height="670px"
+        android:layout_marginTop="200px"
+        android:src="@drawable/output_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:fontFamily="@font/pbold"
+        android:text="Pesanan Diterima"
+        android:textColor="@color/magenta"
+        android:textSize="69px"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:text="Pesanan mu sudah diterima dan akan segera dipersiapkan, silahkan menunggu dengan"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:text="santuy ya..."
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="551px"
+        android:layout_height="100px"
+        android:layout_marginTop="70px"
+        android:elevation="5px"
+        android:background="@drawable/output_button_1"
+        android:fontFamily="@font/pregular"
+        android:text="Lihat Pesanan"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/backMenu"
+        android:layout_width="551px"
+        android:layout_height="100px"
+        android:background="@drawable/output_button_2"
+        android:fontFamily="@font/pregular"
+        android:text="Pesan Lainnya"
+        android:layout_marginTop="70px"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="40px"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/backButton"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
